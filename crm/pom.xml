@@ -34,23 +34,28 @@
         </dependency>
 
 <!--        lombok插件-->
-
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.30</version>
+            <scope>provided</scope>
+        </dependency>
 
     </dependencies>
 
     <!--    仓库镜像-->
-<!--    <repositories>-->
-<!--        <repository>-->
-<!--            <id>spring</id>-->
-<!--            <url>https://maven.aliyun.com/repository/public</url>-->
-<!--            <releases>-->
-<!--                <enabled>true</enabled>-->
-<!--            </releases>-->
-<!--            <snapshots>-->
-<!--                <enabled>true</enabled>-->
-<!--            </snapshots>-->
-<!--        </repository>-->
-<!--    </repositories>-->
+    <repositories>
+        <repository>
+            <id>spring</id>
+            <url>https://maven.aliyun.com/repository/public</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
 
 
 </project>
