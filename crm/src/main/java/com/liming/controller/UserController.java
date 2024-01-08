@@ -1,13 +1,13 @@
 package com.liming.controller;
 
 
-import com.liming.dto.ResponseDto;
-import io.swagger.annotations.*;
-import io.swagger.v3.oas.annotations.responses.ApiResponse;
-import org.springframework.web.bind.annotation.PostMapping;
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.ModelMap;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import org.springframework.web.bind.annotation.RestController;
 
 /**
  * <p>
@@ -17,14 +17,14 @@ import org.springframework.web.bind.annotation.RestController;
  * @author 黎明
  * @since 2024-01-04
  */
-@RestController
+@Controller
 @RequestMapping("/user")
 @Api(tags = "登录注册相关", produces = "application/json", consumes = "application/json",description = "用户接口")
 public class UserController {
-    @PostMapping("/login")
+
+    @GetMapping ({"/login","/"})
     @ApiOperation(value = "登录接口")
-    public ResponseDto login() {
-        System.out.println("success");
-        return null;
+    public String login(ModelMap map) {
+        return "system/user/login";
     }
 }
