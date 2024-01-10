@@ -22,7 +22,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Api(tags = "登录注册相关", produces = "application/json", consumes = "application/json",description = "用户接口")
 public class UserController {
 
-    @GetMapping ({"/login","/"})
+    @GetMapping ("/login")
     @ApiOperation(value = "登录接口")
     public String login(ModelMap map) {
         return "system/user/login";
