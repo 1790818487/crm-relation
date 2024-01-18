@@ -1,6 +1,6 @@
 package com.dlm.mapper;
 
-import com.dlm.dao.FollowUp;
+import com.dlm.pojo.FollowUp;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 
 /**

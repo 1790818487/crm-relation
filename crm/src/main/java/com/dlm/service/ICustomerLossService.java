@@ -1,6 +1,6 @@
 package com.dlm.service;
 
-import com.dlm.dao.CustomerLoss;
+import com.dlm.pojo.CustomerLoss;
 import com.baomidou.mybatisplus.extension.service.IService;
 
 /**

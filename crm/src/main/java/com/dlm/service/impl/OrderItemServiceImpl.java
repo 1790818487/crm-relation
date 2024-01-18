@@ -1,6 +1,6 @@
 package com.dlm.service.impl;
 
-import com.dlm.dao.OrderItem;
+import com.dlm.pojo.OrderItem;
 import com.dlm.mapper.OrderItemMapper;
 import com.dlm.service.IOrderItemService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;

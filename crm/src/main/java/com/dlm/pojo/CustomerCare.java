@@ -1,4 +1,4 @@
-package com.dlm.dao;
+package com.dlm.pojo;
 
 import com.baomidou.mybatisplus.annotation.TableName;
 import com.baomidou.mybatisplus.annotation.IdType;

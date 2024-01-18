@@ -1,6 +1,6 @@
 package com.dlm.service.impl;
 
-import com.dlm.dao.Category;
+import com.dlm.pojo.Category;
 import com.dlm.mapper.CategoryMapper;
 import com.dlm.service.ICategoryService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;

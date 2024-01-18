@@ -1,6 +1,6 @@
 package com.dlm.service.impl;
 
-import com.dlm.dao.RolePermission;
+import com.dlm.pojo.RolePermission;
 import com.dlm.mapper.RolePermissionMapper;
 import com.dlm.service.IRolePermissionService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;

@@ -1,6 +1,6 @@
 package com.dlm.service;
 
-import com.dlm.dao.LoggingEventProperty;
+import com.dlm.pojo.LoggingEventProperty;
 import com.baomidou.mybatisplus.extension.service.IService;
 
 /**

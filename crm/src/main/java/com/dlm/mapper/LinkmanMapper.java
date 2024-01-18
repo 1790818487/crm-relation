@@ -1,6 +1,6 @@
 package com.dlm.mapper;
 
-import com.dlm.dao.Linkman;
+import com.dlm.pojo.Linkman;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 
 /**

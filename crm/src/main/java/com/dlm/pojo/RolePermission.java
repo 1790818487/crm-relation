@@ -1,4 +1,4 @@
-package com.dlm.dao;
+package com.dlm.pojo;
 
 import com.baomidou.mybatisplus.annotation.TableName;
 import com.baomidou.mybatisplus.annotation.IdType;
@@ -21,18 +21,21 @@ import lombok.experimental.Accessors;
 @Data
 @EqualsAndHashCode(callSuper = false)
 @Accessors(chain = true)
-@TableName("category")
-@ApiModel(value="Category对象", description="")
-public class Category implements Serializable {
+@TableName("role_permission")
+@ApiModel(value="RolePermission对象", description="")
+public class RolePermission implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
-    @ApiModelProperty(value = "分类编号")
+    @ApiModelProperty(value = "id")
     @TableId(value = "id", type = IdType.AUTO)
     private Integer id;
 
-    @ApiModelProperty(value = "分类名称")
-    private String name;
+    @ApiModelProperty(value = "角色id")
+    private Integer roleId;
+
+    @ApiModelProperty(value = "权限id")
+    private Integer permissionId;
 
 
 }

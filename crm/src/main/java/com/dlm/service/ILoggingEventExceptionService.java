@@ -1,6 +1,6 @@
 package com.dlm.service;
 
-import com.dlm.dao.LoggingEventException;
+import com.dlm.pojo.LoggingEventException;
 import com.baomidou.mybatisplus.extension.service.IService;
 
 /**

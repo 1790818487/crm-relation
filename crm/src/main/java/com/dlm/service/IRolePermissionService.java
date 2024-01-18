@@ -1,6 +1,6 @@
 package com.dlm.service;
 
-import com.dlm.dao.RolePermission;
+import com.dlm.pojo.RolePermission;
 import com.baomidou.mybatisplus.extension.service.IService;
 
 /**

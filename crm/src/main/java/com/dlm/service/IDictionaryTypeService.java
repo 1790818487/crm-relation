@@ -1,6 +1,6 @@
 package com.dlm.service;
 
-import com.dlm.dao.DictionaryType;
+import com.dlm.pojo.DictionaryType;
 import com.baomidou.mybatisplus.extension.service.IService;
 
 /**

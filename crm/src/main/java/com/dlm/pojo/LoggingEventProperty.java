@@ -1,4 +1,4 @@
-package com.dlm.dao;
+package com.dlm.pojo;
 
 import com.baomidou.mybatisplus.annotation.TableName;
 import com.baomidou.mybatisplus.annotation.IdType;
@@ -20,18 +20,18 @@ import lombok.experimental.Accessors;
 @Data
 @EqualsAndHashCode(callSuper = false)
 @Accessors(chain = true)
-@TableName("logging_event_exception")
-@ApiModel(value="LoggingEventException对象", description="")
-public class LoggingEventException implements Serializable {
+@TableName("logging_event_property")
+@ApiModel(value="LoggingEventProperty对象", description="")
+public class LoggingEventProperty implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
     @TableId(value = "event_id", type = IdType.AUTO)
     private Long eventId;
 
-    private Integer i;
+    private String mappedKey;
 
-    private String traceLine;
+    private String mappedValue;
 
 
 }

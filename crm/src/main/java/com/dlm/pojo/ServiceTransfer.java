@@ -1,4 +1,4 @@
-package com.dlm.dao;
+package com.dlm.pojo;
 
 import com.baomidou.mybatisplus.annotation.TableName;
 import com.baomidou.mybatisplus.annotation.IdType;
@@ -22,25 +22,29 @@ import lombok.experimental.Accessors;
 @Data
 @EqualsAndHashCode(callSuper = false)
 @Accessors(chain = true)
-@TableName("log")
-@ApiModel(value="Log对象", description="")
-public class Log implements Serializable {
+@TableName("service_transfer")
+@ApiModel(value="ServiceTransfer对象", description="")
+public class ServiceTransfer implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
     @TableId(value = "id", type = IdType.AUTO)
     private Integer id;
 
-    @ApiModelProperty(value = "用户编号")
-    private Integer userId;
+    @ApiModelProperty(value = "服务id")
+    private Integer serviceId;
 
-    @ApiModelProperty(value = "操作")
-    private String operation;
+    @ApiModelProperty(value = "进行转交服务的客户经理")
+    private Integer oldManagerId;
 
-    @ApiModelProperty(value = "操作详细内容")
-    private String operationContent;
+    @ApiModelProperty(value = "被转交服务的客户经理")
+    private Integer newManagerId;
 
-    private LocalDateTime operationTime;
+    @ApiModelProperty(value = "转交时间")
+    private LocalDateTime time;
+
+    @ApiModelProperty(value = "转交原因")
+    private String reason;
 
 
 }

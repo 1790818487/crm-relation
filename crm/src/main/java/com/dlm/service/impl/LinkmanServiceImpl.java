@@ -1,6 +1,6 @@
 package com.dlm.service.impl;
 
-import com.dlm.dao.Linkman;
+import com.dlm.pojo.Linkman;
 import com.dlm.mapper.LinkmanMapper;
 import com.dlm.service.ILinkmanService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;

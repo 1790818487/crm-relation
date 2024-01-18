@@ -1,6 +1,6 @@
 package com.dlm.mapper;
 
-import com.dlm.dao.LoggingEventProperty;
+import com.dlm.pojo.LoggingEventProperty;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 
 /**

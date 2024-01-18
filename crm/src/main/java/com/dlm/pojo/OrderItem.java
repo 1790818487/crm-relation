@@ -1,9 +1,8 @@
-package com.dlm.dao;
+package com.dlm.pojo;
 
 import com.baomidou.mybatisplus.annotation.TableName;
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;
-import java.time.LocalDateTime;
 import java.io.Serializable;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
@@ -22,29 +21,32 @@ import lombok.experimental.Accessors;
 @Data
 @EqualsAndHashCode(callSuper = false)
 @Accessors(chain = true)
-@TableName("service_transfer")
-@ApiModel(value="ServiceTransfer对象", description="")
-public class ServiceTransfer implements Serializable {
+@TableName("order_item")
+@ApiModel(value="OrderItem对象", description="")
+public class OrderItem implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
     @TableId(value = "id", type = IdType.AUTO)
     private Integer id;
 
-    @ApiModelProperty(value = "服务id")
-    private Integer serviceId;
+    @ApiModelProperty(value = "数量")
+    private Integer num;
 
-    @ApiModelProperty(value = "进行转交服务的客户经理")
-    private Integer oldManagerId;
+    @ApiModelProperty(value = "单位")
+    private String unit;
 
-    @ApiModelProperty(value = "被转交服务的客户经理")
-    private Integer newManagerId;
+    @ApiModelProperty(value = "单价")
+    private Double unitPrice;
 
-    @ApiModelProperty(value = "转交时间")
-    private LocalDateTime time;
+    @ApiModelProperty(value = "金额")
+    private Double price;
 
-    @ApiModelProperty(value = "转交原因")
-    private String reason;
+    @ApiModelProperty(value = "订单")
+    private Integer ordersId;
+
+    @ApiModelProperty(value = "产品")
+    private Integer productId;
 
 
 }

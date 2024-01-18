@@ -1,6 +1,6 @@
 package com.dlm.service.impl;
 
-import com.dlm.dao.ServiceTransfer;
+import com.dlm.pojo.ServiceTransfer;
 import com.dlm.mapper.ServiceTransferMapper;
 import com.dlm.service.IServiceTransferService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;

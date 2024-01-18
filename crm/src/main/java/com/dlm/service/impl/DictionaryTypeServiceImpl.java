@@ -1,6 +1,6 @@
 package com.dlm.service.impl;
 
-import com.dlm.dao.DictionaryType;
+import com.dlm.pojo.DictionaryType;
 import com.dlm.mapper.DictionaryTypeMapper;
 import com.dlm.service.IDictionaryTypeService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;

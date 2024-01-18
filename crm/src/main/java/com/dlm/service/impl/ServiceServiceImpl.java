@@ -15,6 +15,6 @@ import org.springframework.stereotype.Service;
  * @since 2024-01-04
  */
 @Service
-public class ServiceServiceImpl extends ServiceImpl<ServiceMapper, com.dlm.dao.Service> implements IServiceService {
+public class ServiceServiceImpl extends ServiceImpl<ServiceMapper, com.dlm.pojo.Service> implements IServiceService {
 
 }

@@ -1,6 +1,6 @@
 package com.dlm.mapper;
 
-import com.dlm.dao.DictionaryType;
+import com.dlm.pojo.DictionaryType;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 
 /**

@@ -1,6 +1,6 @@
 package com.dlm.service.impl;
 
-import com.dlm.dao.Customer;
+import com.dlm.pojo.Customer;
 import com.dlm.mapper.CustomerMapper;
 import com.dlm.service.ICustomerService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;

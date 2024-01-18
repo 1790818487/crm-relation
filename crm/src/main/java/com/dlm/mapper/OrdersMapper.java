@@ -1,6 +1,6 @@
 package com.dlm.mapper;
 
-import com.dlm.dao.Orders;
+import com.dlm.pojo.Orders;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 
 /**

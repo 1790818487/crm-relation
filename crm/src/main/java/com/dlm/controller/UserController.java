@@ -1,13 +1,13 @@
 package com.dlm.controller;
 
-
+import com.dlm.dto.ResponseDto;
+import com.dlm.dto.login.RequestLogin;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.ModelMap;
-import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
-
 
 /**
  * <p>
@@ -22,9 +22,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Api(tags = "登录注册相关", produces = "application/json", consumes = "application/json",description = "用户接口")
 public class UserController {
 
-    @GetMapping ("/login")
+    @PostMapping("/login")
     @ApiOperation(value = "登录接口")
-    public String login(ModelMap map) {
-        return "system/user/login";
+    public ResponseDto login(@RequestBody RequestLogin requestLogin) {
+
+        return null;
     }
 }

@@ -1,6 +1,6 @@
 package com.dlm.service.impl;
 
-import com.dlm.dao.LoggingEventException;
+import com.dlm.pojo.LoggingEventException;
 import com.dlm.mapper.LoggingEventExceptionMapper;
 import com.dlm.service.ILoggingEventExceptionService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;

@@ -1,6 +1,6 @@
 package com.dlm.service.impl;
 
-import com.dlm.dao.Permission;
+import com.dlm.pojo.Permission;
 import com.dlm.mapper.PermissionMapper;
 import com.dlm.service.IPermissionService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;

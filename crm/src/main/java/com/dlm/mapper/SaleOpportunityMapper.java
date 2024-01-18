@@ -1,6 +1,6 @@
 package com.dlm.mapper;
 
-import com.dlm.dao.SaleOpportunity;
+import com.dlm.pojo.SaleOpportunity;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 
 /**

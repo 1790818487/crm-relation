@@ -1,6 +1,6 @@
 package com.dlm.mapper;
 
-import com.dlm.dao.RolePermission;
+import com.dlm.pojo.RolePermission;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 
 /**

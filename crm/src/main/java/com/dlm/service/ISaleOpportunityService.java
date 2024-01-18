@@ -1,6 +1,6 @@
 package com.dlm.service;
 
-import com.dlm.dao.SaleOpportunity;
+import com.dlm.pojo.SaleOpportunity;
 import com.baomidou.mybatisplus.extension.service.IService;
 
 /**

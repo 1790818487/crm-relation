@@ -1,4 +1,4 @@
-package com.dlm.dao;
+package com.dlm.pojo;
 
 import com.baomidou.mybatisplus.annotation.TableName;
 import com.baomidou.mybatisplus.annotation.IdType;
@@ -21,21 +21,23 @@ import lombok.experimental.Accessors;
 @Data
 @EqualsAndHashCode(callSuper = false)
 @Accessors(chain = true)
-@TableName("role")
-@ApiModel(value="Role对象", description="")
-public class Role implements Serializable {
+@TableName("dictionary_item")
+@ApiModel(value="DictionaryItem对象", description="")
+public class DictionaryItem implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
-    @ApiModelProperty(value = "角色id")
     @TableId(value = "id", type = IdType.AUTO)
     private Integer id;
 
-    @ApiModelProperty(value = "角色名称")
+    @ApiModelProperty(value = "字典类型id")
+    private Integer typeId;
+
+    @ApiModelProperty(value = "字典名称")
     private String name;
 
-    @ApiModelProperty(value = "角色描述")
-    private String description;
+    @ApiModelProperty(value = "字典状态 0：只可读   1：可以进行curd")
+    private Integer status;
 
 
 }

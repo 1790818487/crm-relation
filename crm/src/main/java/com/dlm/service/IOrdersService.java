@@ -1,6 +1,6 @@
 package com.dlm.service;
 
-import com.dlm.dao.Orders;
+import com.dlm.pojo.Orders;
 import com.baomidou.mybatisplus.extension.service.IService;
 
 /**

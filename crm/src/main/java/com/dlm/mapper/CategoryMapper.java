@@ -1,6 +1,6 @@
 package com.dlm.mapper;
 
-import com.dlm.dao.Category;
+import com.dlm.pojo.Category;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 
 /**

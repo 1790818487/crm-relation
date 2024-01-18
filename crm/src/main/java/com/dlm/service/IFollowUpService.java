@@ -1,6 +1,6 @@
 package com.dlm.service;
 
-import com.dlm.dao.FollowUp;
+import com.dlm.pojo.FollowUp;
 import com.baomidou.mybatisplus.extension.service.IService;
 
 /**

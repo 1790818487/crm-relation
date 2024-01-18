@@ -1,11 +1,10 @@
-package com.dlm.dao;
+package com.dlm.pojo;
 
 import com.baomidou.mybatisplus.annotation.TableName;
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;
 import java.io.Serializable;
 import io.swagger.annotations.ApiModel;
-import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.experimental.Accessors;
@@ -21,21 +20,18 @@ import lombok.experimental.Accessors;
 @Data
 @EqualsAndHashCode(callSuper = false)
 @Accessors(chain = true)
-@TableName("role_permission")
-@ApiModel(value="RolePermission对象", description="")
-public class RolePermission implements Serializable {
+@TableName("logging_event_exception")
+@ApiModel(value="LoggingEventException对象", description="")
+public class LoggingEventException implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
-    @ApiModelProperty(value = "id")
-    @TableId(value = "id", type = IdType.AUTO)
-    private Integer id;
+    @TableId(value = "event_id", type = IdType.AUTO)
+    private Long eventId;
 
-    @ApiModelProperty(value = "角色id")
-    private Integer roleId;
+    private Integer i;
 
-    @ApiModelProperty(value = "权限id")
-    private Integer permissionId;
+    private String traceLine;
 
 
 }

@@ -1,6 +1,6 @@
 package com.dlm.mapper;
 
-import com.dlm.dao.Permission;
+import com.dlm.pojo.Permission;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 
 /**
