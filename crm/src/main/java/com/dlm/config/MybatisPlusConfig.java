@@ -5,10 +5,10 @@ import com.baomidou.mybatisplus.extension.plugins.MybatisPlusInterceptor;
 import com.baomidou.mybatisplus.extension.plugins.inner.PaginationInnerInterceptor;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.context.annotation.Bean;
-import org.springframework.stereotype.Component;
+import org.springframework.context.annotation.Configuration;
 
-@Component
-@MapperScan("com.liming.mapper")
+@Configuration
+@MapperScan("com.dlm.mapper")
 public class MybatisPlusConfig {
 
     @Bean
