@@ -15,6 +15,7 @@
       <module name="crm" target="1.8" />
       <module name="crm (1)" target="1.5" />
       <module name="crm-common" target="8" />
+      <module name="demo" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
