@@ -16,52 +16,56 @@
     </parent>
 
     <dependencies>
-
-        <!--        web项目启动依赖-->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>
         <!--        mysql依赖-->
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
         </dependency>
-        <!--        mybatis-plus-->
         <dependency>
-            <groupId>com.baomidou</groupId>
-            <artifactId>mybatis-plus-boot-starter</artifactId>
-            <version>3.5.4.1</version>
+            <groupId>com.dlm</groupId>
+            <artifactId>crm-common</artifactId>
+            <version>1.0</version>
         </dependency>
+<!--        redis-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-redis</artifactId>
+        </dependency>
+<!--        &lt;!&ndash;        mybatis-plus&ndash;&gt;-->
+<!--        <dependency>-->
+<!--            <groupId>com.baomidou</groupId>-->
+<!--            <artifactId>mybatis-plus-boot-starter</artifactId>-->
+<!--            <version>3.5.4.1</version>-->
+<!--        </dependency>-->
 
-<!--        lombok插件-->
-        <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-            <version>1.18.30</version>
-            <scope>provided</scope>
-        </dependency>
+<!--&lt;!&ndash;        lombok插件&ndash;&gt;-->
+<!--        <dependency>-->
+<!--            <groupId>org.projectlombok</groupId>-->
+<!--            <artifactId>lombok</artifactId>-->
+<!--            <version>1.18.30</version>-->
+<!--            <scope>provided</scope>-->
+<!--        </dependency>-->
 
-<!--        hutool工具类库-->
-        <dependency>
-            <groupId>com.xiaoleilu</groupId>
-            <artifactId>hutool</artifactId>
-            <version>2.16.2</version>
-        </dependency>
+<!--&lt;!&ndash;        hutool工具类库&ndash;&gt;-->
+<!--        <dependency>-->
+<!--            <groupId>com.xiaoleilu</groupId>-->
+<!--            <artifactId>hutool</artifactId>-->
+<!--            <version>2.16.2</version>-->
+<!--        </dependency>-->
 
-<!--        druid-->
-        <dependency>
-            <groupId>com.alibaba</groupId>
-            <artifactId>druid</artifactId>
-            <version>1.2.16</version>
-        </dependency>
+<!--&lt;!&ndash;        druid&ndash;&gt;-->
+<!--        <dependency>-->
+<!--            <groupId>com.alibaba</groupId>-->
+<!--            <artifactId>druid</artifactId>-->
+<!--            <version>1.2.16</version>-->
+<!--        </dependency>-->
 
-<!--        swagger3依赖注解-->
-        <dependency>
-            <groupId>io.springfox</groupId>
-            <artifactId>springfox-boot-starter</artifactId>
-            <version>3.0.0</version>
-        </dependency>
+<!--&lt;!&ndash;        swagger3依赖注解&ndash;&gt;-->
+<!--        <dependency>-->
+<!--            <groupId>io.springfox</groupId>-->
+<!--            <artifactId>springfox-boot-starter</artifactId>-->
+<!--            <version>3.0.0</version>-->
+<!--        </dependency>-->
 
 <!--        actuator依赖-->
 <!--        <dependency>-->
@@ -98,6 +102,35 @@
         </profile>
     </profiles>
 
-
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+<!--                <version>3.8.1</version>-->
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                    <encoding>UTF-8</encoding>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <mainClass>com.dlm.CRMApplication</mainClass>
+<!--                    <skip>true</skip>-->
+                </configuration>
+<!--                <executions>-->
+<!--                    <execution>-->
+<!--                        <id>repackage</id>-->
+<!--                        <goals>-->
+<!--                            <goal>repackage</goal>-->
+<!--                        </goals>-->
+<!--                    </execution>-->
+<!--                </executions>-->
+            </plugin>
+        </plugins>
+    </build>
 
 </project>

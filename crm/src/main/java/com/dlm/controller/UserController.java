@@ -26,7 +26,7 @@ public class UserController {
     @PostMapping("/login")
     @ApiOperation(value = "登录接口")
     public ResponseDto login(@Validated @RequestBody RequestLogin requestLogin) {
-        System.out.println("success");
+
         return null;
     }
 }

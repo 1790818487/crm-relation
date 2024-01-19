@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/crm/crm.iml" filepath="$PROJECT_DIR$/crm/crm.iml" />
+      <module fileurl="file://$PROJECT_DIR$/crm-common/crm-common.iml" filepath="$PROJECT_DIR$/crm-common/crm-common.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/crm-relation.iml" filepath="$PROJECT_DIR$/.idea/crm-relation.iml" />
       <module fileurl="file://$PROJECT_DIR$/crm-vue/crm-vue.iml" filepath="$PROJECT_DIR$/crm-vue/crm-vue.iml" />
     </modules>
