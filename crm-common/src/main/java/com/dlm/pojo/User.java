@@ -3,6 +3,7 @@ package com.dlm.pojo;
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
+import com.dlm.validated.userGroup.RegisterGroup;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
@@ -35,7 +36,7 @@ public class User implements Serializable {
     private Integer id;
 
     @ApiModelProperty(value = "用户账号")
-    @Pattern(regexp = "^[0-9a-zA-Z@_]{8,16}$",message = "账号存在非法字符，包含的特殊字符为‘@’，‘_';")
+    @Pattern(regexp = "^[0-9a-zA-Z@_]{8,16}$",message = "账号存在非法字符，包含的特殊字符为‘@’，‘_';",groups = RegisterGroup.class)
     private String account;
 
     @ApiModelProperty(value = "密码")

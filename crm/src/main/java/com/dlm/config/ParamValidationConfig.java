@@ -20,7 +20,6 @@ public class ParamValidationConfig {
                 //failFast的意思只要出现校验失败的情况，就立即结束校验，不再进行后续的校验。
                 .failFast(true)
                 .buildValidatorFactory();
-
         return validatorFactory.getValidator();
     }
 
